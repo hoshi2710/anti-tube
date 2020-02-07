@@ -10,6 +10,14 @@
       "default_popup": "popup.html"
     },
     "permissions": [
-      "activeTab"
-    ]
+      "activeTab",
+      "storage"
+    ],
+    "content_scripts": [ 
+        { 
+            "js": [ "jquery-3.4.1.min.js", "script.js"],
+             "matches": [ "http://*/*", "https://*/*"]
+         }
+     ]
+  
   }

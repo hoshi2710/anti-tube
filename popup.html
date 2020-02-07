@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs='">
     <link rel="stylesheet" href="style.css">
     <title>anti-tube</title>
 </head>
@@ -12,7 +13,7 @@
 
         <div class="sw">
             <h1 class="sw_status">OFF</h1>
-            <div class="sw_toggle" id="main_sw" onclick="sw_main('main_sw');"> 
+            <div class="sw_toggle" id="main_sw"> 
                 <div class="toggle_dot"></div>
             </div>
         </div>
@@ -23,23 +24,23 @@
     <div class="main">
             <div class="item">
                 <span class="item_title">댓글 숨기기</span>
-                <div class="sw_toggle" id="hide_comment_sw" onclick="sw('hide_comment_sw');"> <div class="toggle_dot"></div></div>
+                <div class="sw_toggle" id="hide_comment_sw"> <div class="toggle_dot"></div></div>
             </div>
             <div class="item">
                 <span class="item_title">추천 영상 숨기기</span>
-                <div class="sw_toggle" id="recommend_hide_sw" onclick="sw('recommend_hide_sw');"> <div class="toggle_dot"></div></div>
+                <div class="sw_toggle" id="recommend_hide_sw"> <div class="toggle_dot"></div></div>
             </div>
             <div class="item">
                 <span class="item_title">재생 후 추천 영상 숨기기</span>
-                <div class="sw_toggle" id="end_recommend_hide_sw" onclick="sw('end_recommend_hide_sw');"> <div class="toggle_dot"></div></div>
+                <div class="sw_toggle" id="end_recommend_hide_sw"> <div class="toggle_dot"></div></div>
             </div>
             <div class="item">
                 <span class="item_title">메뉴 버튼 / 메뉴 바 숨기기</span>
-                <div class="sw_toggle" id="hide_menu_sw" onclick="sw('hide_menu_sw');"> <div class="toggle_dot"></div></div>
+                <div class="sw_toggle" id="hide_menu_sw"> <div class="toggle_dot"></div></div>
             </div>
             <div class="item">
                 <span class="item_title">영상 시청 제한</span>
-                <div class="sw_toggle" id="play_limit_sw" onclick="sw('play_limit_sw');"> <div class="toggle_dot"></div></div>
+                <div class="sw_toggle" id="play_limit_sw"> <div class="toggle_dot"></div></div>
             </div>     
     </div>
     
