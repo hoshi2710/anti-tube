@@ -4,6 +4,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 .sw_container
 {
@@ -15,6 +19,8 @@
 .sw_status
 {
     color: white;
+    text-align: center;
+    width: 0px;
 }
 .toggle_dot
 {
